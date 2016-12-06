@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatoIntegrator</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div class="container-fluid chato_bg">
+  		<div class="chato_header">
+  			<div class="row">
+  				<div class="col-md-12 col-xs-12">
+  					<h3 class="text-center text-primary">Simple Chat Ooo</h3>	
+  				</div>
+  			</div>
+  		</div>
+  		<div class="chato_body">
+  			<div class="col-md-12 col-xs-12">
+                        <p class="notice"><%= notice %></p>
+                        <p class="alert"><%= alert %></p>
+  				<%= yield %>
+			</div>  			
+  		</div>
+  		<div class="chato_footer">
+  			<div class="col-md-12 col-xs-12">
+  					
+			</div>
+  		</div>
+  	</div>
+  </body>
+</html>
